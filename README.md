@@ -5,7 +5,7 @@
 3. Then, run: cd git-assignment-2
 4. Then, open the folder git-assignment-2 in VSCode
 5. Open the README.md file, which is this file, you will edit this on VSCode
-6. VOCAB: Origin = your fork (your_user/git-assignment-2)  &nbsp;&nbsp;&nbsp;  Upstream = my repo (josephor1271/git-assignment-2)
+6. INDUSTRY VOCAB: Origin = your fork (your_user/git-assignment-2)  &nbsp;&nbsp;&nbsp;  Upstream = my repo (josephor1271/git-assignment-2)
 
 ## Part 1 (Branch then merging within your fork)
 1. First, you will make a branch named writing
@@ -15,8 +15,8 @@
 5. Then, you will make some changes to the line below.
 6. *WRITE YOUR SCHOOL + INTENDED MAJOR HERE*
 7. Add, commit, and push those changes to GitHub using your terminal
-8. Now, make a pull request on GitHub from your fork's writing branch, to your your fork's main branch. Make sure that you are not pull requesting my copy of the repository, my username should not appear at all in the pull request. Will be something like main <- writing
-9. Merge the pull request on GitHub (if it doesn't let you, then you pull requested my copy, instead of yours)
+8. Now, make a pull request on GitHub from origin's (your fork's) writing branch, to your origin's (your fork's) main branch. Make sure that you are not pull requesting upstream (my copy of the repository), my username should not appear at all in the pull request. Will look something like main <- writing
+9. Merge the pull request on GitHub (if it doesn't let you, then you pull requested upstream, instead of origin)
 10. Now, on GitHub, your main branch and your writing branch should look identical
 11. Congrats, you have made changes using a branch, and merged them into the main branch!
 
@@ -32,4 +32,33 @@
 
 ## Submission
 Submit a link to your fork of this repository to google classroom
+
+## Optional Challenge (Fix a Typo Using a Branch)
+
+This part is optional, but recommended if you finish early.
+
+1. Make sure you are on the `main` branch:
+git status
+If not:
+git checkout main
+
+2. Create a new branch called `typo-fix`:
+git checkout -b typo-fix
+
+3. Find **any typo or wording you think could be improved** in this README and fix it.
+
+4. Add, commit, and push your changes:
+git add README.md
+git commit -m "Fix typo in README"
+git push -u origin typo-fix
+
+5. On GitHub, open a pull request **from `typo-fix` to `main` within your fork**  
+(do **not** include my repository in this pull request).
+
+6. Merge the pull request.
+
+7. After merging, your `main` branch and your `typo-fix` branch should be identical.
+
+If you complete this, you have now practiced the full GitHub workflow twice:
+branch → commit → push → pull request → merge.
    
